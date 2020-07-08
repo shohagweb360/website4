@@ -1,0 +1,137 @@
+*{padding:0; margin:0; box-sizing:border-box;font-family: 'Montserrat', sans-serif;}
+body{
+	padding:0;
+	margin:0;
+}
+.siteheader{
+	background-image:linear-gradient(57deg,#00c6a7,#1e4d92);
+	width:100%;
+	min-height:100vh;
+	clip-path:polygon(0% 0%,100% 0%,100% 65%,0% 100%);
+
+}
+.logo{width:50%;}
+.logo h1{
+	line-height:100px;
+	padding-left:50px;
+}
+nav{
+	width:100%;
+	height:100px;
+	display:flex;
+	color:white;
+}
+nav #myLinks{
+	width:50%;
+	height:100px;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+	list-style:none;
+	position:relative;
+}
+nav ul li{
+	font-size:14px;
+	font-weight:bold;
+	text-transform:uppercase;
+	cursor:pointer;
+}
+nav span.bar{
+	display:none;
+	cursor:pointer;
+}
+.siteheader section{
+	display:flex;
+}
+.header-leftSide{
+	width:600px;
+	height:auto;
+	overflow:hidden;
+	margin-top:30px;
+}
+.header-leftSide img{
+	width:100%;
+	height:auto;
+}
+.header-rightside{
+	width:50%;
+	min-height:300px;
+	text-align:center;
+	margin-top:80px;
+	padding:40px;
+	color:white;
+
+}
+.header-rightside h1{
+	font-size:50px;
+	font-weight:900;
+	text-transform:uppercase;
+}
+.header-rightside p{
+	font-size:1.1rem;
+	padding:30px 0px;
+}
+.header-rightside button{
+	padding:20px 35px;
+	font-size:17px;
+	font-weight:bold;
+	color:white;
+	border-radius:4px;
+	background-image:linear-gradient(57deg,#00c6a7,#1e4d92);
+	text-transform:uppercase;
+	cursor:pointer;
+	
+}
+.header-rightside button:hover{
+	background-image:linear-gradient(57deg,#1e4d92,#00c6a7);
+}
+
+
+@media screen and (max-width:768px){
+	.siteheader{
+	clip-path:polygon(0% 0%,100% 0%,100% 100%,0% 100%);
+	}
+	.siteheader section{
+		display:block;
+	}
+	.header-leftSide{
+		width:100%;
+		margin-top:0;
+	}
+	.header-rightside{
+		width:100%;
+		margin-top:0;
+	}
+    nav span.bar {
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: 25px;
+	font-size: 30px;
+    }
+	nav{display:block;}
+	nav #myLinks {
+	width: 100%;
+	height: 100px;
+	display:none;
+	align-items: center;
+	justify-content: space-around;
+	list-style: none;
+	z-index: 1;
+	position: relative;
+   }
+   nav ul li {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 20px;
+	background: #00c6a7;
+	width: 100%;
+	transition:all linear .3s;
+	
+   }
+    nav ul li:hover, li.active{
+		background:#1e4d92;
+	}
+	.logo h1{padding-left:20px;}
+}

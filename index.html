@@ -1,0 +1,51 @@
+<! doctype html>
+<html>
+	<head>
+		<title>My forth website</title>
+		<meta charset="utf-8">
+		    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script src="https://kit.fontawesome.com/012df665c6.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<header class="siteheader">
+		<nav>
+			<div class="logo">
+				<h1>My Logo</h1>
+			</div>
+			<span class="bar" onclick="myFunction()"><i class="fa fa-bars"></i></span>
+			<ul class="menu"  id="myLinks">
+				<li class="active">Home</li>
+				<li>About</li>
+				<li>Services</li>
+				<li>Contact us</li>
+			</ul>
+		</nav>
+		<section>
+			<div class="header-leftSide">
+				<img src="web.png">
+			</div>
+			<div class="header-rightside">
+				<h1>Modern Website</h1>
+				<p>This is a modern website here you will find all element</p>
+				<button>find more</button>
+			</div>
+		</section>
+		
+	</header>
+	</body>
+	<script>
+
+		
+				function myFunction() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+				
+	</script>
+</html>
